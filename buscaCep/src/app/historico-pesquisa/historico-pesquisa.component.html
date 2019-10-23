@@ -1,0 +1,20 @@
+<section>
+    <table *ngIf="this.enderecos.length > 0">
+      <tr>
+        <th>Cep</th>
+        <th>Cidade</th>
+        <th>Bairro</th>
+        <th>Logradouro</th>
+        <th>UF</th>
+      </tr>
+      <tr *ngFor="let endereco of this.enderecos">
+        <td>{{ endereco.cep }}</td>
+        <td>{{ endereco.cidade }}</td>
+        <td>{{ endereco.bairro }}</td>
+        <td>{{ endereco.logradouro }}</td>
+        <td>{{ endereco.uf }}</td>
+      </tr>
+    </table>
+
+    <p *ngIf="this.enderecos.length === 0">Quando você pesquisar seu histórico vai aparecer aqui</p>
+</section>

@@ -1,0 +1,23 @@
+<form [formGroup]="formulario" (ngSubmit)="buscar()">
+    <div>
+        <label>CEP</label><br>
+        <input type="text" name="cep" id="cep" formControlName="cep" placeholder="Digite seu CEP">
+    </div>
+    <div>
+        <label for="">Logradouro</label><br>
+        <input  type="text" name="logradouro" id="logradouro" formControlName="logradouro">
+    </div>
+    <div>
+        <label for="">Bairro</label><br>
+        <input  type="text" name="bairro" id="bairro" formControlName="bairro">
+    </div>
+    <div>
+        <label for="">Cidade</label><br>
+        <input  type="text" name="cidade" id="cidade" formControlName="cidade">
+    </div>
+    <div>
+        <label for="">UF</label><br>
+        <input type="text" name="uf" id="uf" formControlName="uf">
+    </div>
+    <!--<button type="submit" [disabled]="formulario.invalid">Buscar</button> -->
+</form>
